@@ -26,9 +26,9 @@ Variabel target yang digunakan adalah `Total Amount`, sedangkan fitur prediksi b
 Proyek ini menggunakan metode **Supervised Learning** dengan pendekatan **Regression**. Metode ini dipilih karena tujuan analisis adalah memperkirakan nilai numerik berupa total transaksi penjualan.
 
 Algoritma yang dibandingkan:
-1. **Linear Regression** — memodelkan hubungan linear antara fitur dan target.
-2. **LARS (Least Angle Regression)** — metode regresi yang membangun model melalui proses pemilihan fitur secara bertahap.
-3. **Gradient Boosting Regressor** — membangun model secara bertahap dengan menggabungkan sejumlah model prediksi untuk memperbaiki kesalahan sebelumnya.
+1. **Linear Regression** : memodelkan hubungan linear antara fitur dan target.
+2. **LARS (Least Angle Regression)** : metode regresi yang membangun model melalui proses pemilihan fitur secara bertahap.
+3. **Gradient Boosting Regressor** : membangun model secara bertahap dengan menggabungkan sejumlah model prediksi untuk memperbaiki kesalahan sebelumnya.
 
 Dataset dibagi menjadi 80% data training dan 20% data testing untuk pelatihan dan evaluasi model.
 
@@ -40,11 +40,11 @@ Tools yang digunakan:
 - Git dan GitHub (untuk pengelolaan kode dan dokumentasi)
 
 Library Python:
-- **Pandas** — membaca dan mengolah dataset.
-- **NumPy** — melakukan perhitungan numerik.
-- **Matplotlib** — membuat visualisasi data.
-- **Seaborn** — membuat grafik statistik.
-- **Scikit-learn** — preprocessing, pelatihan model, pembagian dataset, dan evaluasi.
+- **Pandas** : membaca dan mengolah dataset.
+- **NumPy** : melakukan perhitungan numerik.
+- **Matplotlib** : membuat visualisasi data.
+- **Seaborn** : membuat grafik statistik.
+- **Scikit-learn** : preprocessing, pelatihan model, pembagian dataset, dan evaluasi.
 
 ## 5. Instalasi
 Pastikan Python dan Jupyter Notebook sudah tersedia. Library yang diperlukan dapat dipasang melalui terminal atau sel notebook menggunakan perintah berikut:
@@ -72,18 +72,18 @@ Setelah instalasi selesai, pastikan dataset `sales.csv` dan notebook `data_sales
 ## 7. Tahapan Analisis
 Tahapan analisis dalam proyek ini meliputi:
 
-1. **Import Library** — memanggil library yang dibutuhkan.
-2. **Membaca Dataset** — memuat file CSV ke dalam DataFrame.
-3. **Memahami Data** — memeriksa struktur, tipe data, dan statistik deskriptif.
-4. **Data Cleaning** — memeriksa nilai kosong, data duplikat, dan format tanggal.
-5. **Feature Engineering** — membentuk fitur bulan, tanggal, dan hari dalam minggu dari kolom tanggal.
-6. **Exploratory Data Analysis (EDA)** — menganalisis distribusi total penjualan, kategori produk, dan korelasi fitur numerik.
-7. **Menentukan Fitur dan Target** — menggunakan `Total Amount` sebagai target prediksi.
-8. **Pembagian Dataset** — membagi data menjadi data training dan testing.
-9. **Preprocessing** — menangani nilai kosong, melakukan standardisasi fitur numerik, dan mengubah fitur kategorikal menggunakan One-Hot Encoding.
-10. **Pelatihan Model** — melatih Linear Regression, LARS, dan Gradient Boosting Regressor.
-11. **Evaluasi dan Perbandingan** — membandingkan performa ketiga model.
-12. **Visualisasi Hasil** — membandingkan nilai aktual dan nilai prediksi.
+1. **Import Library** : memanggil library yang dibutuhkan.
+2. **Membaca Dataset** : memuat file CSV ke dalam DataFrame.
+3. **Memahami Data** : memeriksa struktur, tipe data, dan statistik deskriptif.
+4. **Data Cleaning** : memeriksa nilai kosong, data duplikat, dan format tanggal.
+5. **Feature Engineering** : membentuk fitur bulan, tanggal, dan hari dalam minggu dari kolom tanggal.
+6. **Exploratory Data Analysis (EDA)** : menganalisis distribusi total penjualan, kategori produk, dan korelasi fitur numerik.
+7. **Menentukan Fitur dan Target** : menggunakan `Total Amount` sebagai target prediksi.
+8. **Pembagian Dataset** : membagi data menjadi data training dan testing.
+9. **Preprocessing** : menangani nilai kosong, melakukan standardisasi fitur numerik, dan mengubah fitur kategorikal menggunakan One-Hot Encoding.
+10. **Pelatihan Model** : melatih Linear Regression, LARS, dan Gradient Boosting Regressor.
+11. **Evaluasi dan Perbandingan** : membandingkan performa ketiga model.
+12. **Visualisasi Hasil** : membandingkan nilai aktual dan nilai prediksi.
 
 ## 8. Evaluasi
 Evaluasi model dilakukan menggunakan beberapa metrik berikut:
